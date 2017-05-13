@@ -85,6 +85,8 @@ def searchall_(te, var):
         te.tag_config('match',foreground='red', background='yellow')
         startpoint=indax
     return
+
+
 def replaceall_(te, var,char='st'):
     if len(var)==0:
         return
@@ -106,6 +108,7 @@ def replaceall_(te, var,char='st'):
         te.insert(startpos,char)
         startpoint=indax
     return
+
 class Find_wm:
     def __init__(self, root, win=None):
         storeobj=Tkinter.Toplevel(root)
