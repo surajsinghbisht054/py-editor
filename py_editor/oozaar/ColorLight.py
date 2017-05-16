@@ -34,6 +34,8 @@ import __builtin__,re,keyword, Tkinter
 def any(name, alternates):
     "Return a named group pattern matching list of alternates."
     return "(?P<%s>" % name + "|".join(alternates) + ")"
+
+
 def ty():
     kw = r"\b" + any("KEYWORD", keyword.kwlist) + r"\b"
     print kw
